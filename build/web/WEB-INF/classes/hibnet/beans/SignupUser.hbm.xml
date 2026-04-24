@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="hibnet.beans">
+    <class name="SignupUser" table="usersignup">
+        <id name="userId" column="userid"/>
+        <property name="password" column="password"/>
+        <property name="fullName" column="fullname"/>
+        <property name="email" column="email"/>
+        <property name="contact" column="contact"/>
+        <property name="address" column="address"/>
+        <property name="city" column="city"/>
+        <property name="pincode" column="pincode"/>
+        <property name="gender" column="gender"/>
+        <property name="photo" column="photo"/>
+        <property name="aadharNo" column="aadharno"/>
+        <property name="accountNo" column="accountno"/>
+        <property name="pancardNo" column="pancardno"/>
+        <property name="bankName" column="bankname"/>
+    </class>
+</hibernate-mapping>
+
+

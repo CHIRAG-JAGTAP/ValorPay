@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="hibnet.beans">
+    <class name="Complain" table="complaintable11">
+        <id name="complainId" column="complainid">
+            <generator class="native"/>
+        </id>
+        <property name="accNo" column="accno"/>
+        <property name="complain" column="complain"/>
+        <property name="contact" column="contact"/>
+        <property name="datetime" column="datetime"/>
+        <property name="status" column="status"/>
+    </class>
+</hibernate-mapping>
+
+

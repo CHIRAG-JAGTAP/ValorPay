@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+
+   <package name="technosoftinformatics" namespace="/" extends="struts-default">
+
+        <action name="loadpage">
+            <result>home.jsp</result>
+        </action>
+        <action name="signupaction">
+            <result>signup.jsp</result>
+        </action>
+        <action name="useraction">
+            <result>userdashboard.jsp</result>
+        </action>
+        <action name="aboutaction">
+            <result>about.jsp</result>
+        </action>
+        <action name="signinaction">
+            <result>signin.jsp</result>
+        </action>
+        <action name="complainaction">
+            <result>complainuser.jsp</result>
+        </action>
+        <action name="passaction">
+            <result>passwordsetting.jsp</result>
+        </action>
+         <action name="jobaction">
+            <result>jobApply.jsp</result>
+        </action>
+        <action name="deleteuser">
+            <result>deleteuser.jsp</result>
+        </action>
+        <action name="serviceaction">
+            <result>services.jsp</result>
+        </action>
+        <action name="authaction">
+            <result>authdashboard.jsp</result>
+        </action>
+        <action name="viewcomplainaction">
+            <result>viewcomplain.jsp</result>
+        </action>
+        <action name="viewuseraction">
+            <result>viewuser.jsp</result>
+        </action>
+        <action name="viewserviceaction">
+            <result>viewservice.jsp</result>
+        </action>
+        <action name="authlogincode" class="hibnet.beans.SignupCodeActionClass" method="verification">
+            <result name="error">authlogin.jsp</result>
+            <result name="success">authdashboard.jsp</result>
+        </action>
+           <action name="jobcode" class="hibnet.beans.JobApplicantCodeActionClass">
+            <result name="success">home.jsp</result>
+        </action>
+        <action name="signincode" class="hibnet.beans.SignupCodeActionClass" method="verification">
+            <result name="error">signin.jsp</result>
+            <result name="success">userdashboard.jsp</result>
+        </action>
+         <action name="settingcode" class="hibnet.beans.SignupCodeActionClass" method="password">
+            <result name="error">passwordsetting.jsp</result>
+            <result name="success">signin.jsp</result>
+        </action>
+        <action name="deletecode" class="hibnet.beans.SignupCodeActionClass" method="deleteaccount">
+            <result name="error">deleteuser.jsp</result>
+            <result name="success">home.jsp</result>
+        </action>
+        <action name="complaincode" class="hibnet.beans.ComplainCodeActionClass">
+            <result name="success">complainuser_1.jsp</result>
+        </action>
+        <action name="signupcode" class="hibnet.beans.SignupCodeActionClass">
+            <result name="success">signin.jsp</result>
+        </action>
+        <action name="authlogin">
+            <result>authlogin.jsp</result>
+        </action>
+        <action name="servicecode" class="hibnet.beans.ServiceCodeActionClass">
+            <result name="success">userdashboard.jsp</result>
+        </action>
+    </package>
+
+</struts> 
